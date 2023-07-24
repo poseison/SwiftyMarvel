@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol CharactersRepository {
+
+  
+    func getCharacters(from offset: Int, by searchKey: String?) async -> Result<PaginatedResponse<Character>, AppError>
+}

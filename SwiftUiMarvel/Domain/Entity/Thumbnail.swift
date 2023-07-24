@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Thumbnail {
+    let path: String?
+    let thumbnailExtension: String?
+}

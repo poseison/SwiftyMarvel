@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct SwiftUiMarvelApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+    init() {
+        
+         Resolver.shared.injectModules()
+     }
+     
+     var body: some Scene {
+         WindowGroup {
+             SplashView()
+         }
+     }
 }

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct BaseResponse<T> {
+    let code: Int
+    let status: String
+    let data: T
+}

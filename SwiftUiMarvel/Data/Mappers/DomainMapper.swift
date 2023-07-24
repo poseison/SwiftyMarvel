@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol DomainMapper {
+    associatedtype EntityType
+    func toDomain() -> EntityType
+}
